@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".splash_screen">
+
+    <TextView
+        android:id="@+id/lariflix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="155dp"
+        android:text="Lariflix"
+        android:layout_marginLeft="155dp"
+        android:textStyle="bold"
+        android:textColor="#CC0F0F"
+        android:textSize="52dp"></TextView>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="home for the movie experts"
+        android:layout_marginLeft="185dp"
+        android:textStyle="bold"
+        android:textColor="#CC0F0F"
+        android:textSize="12dp"></TextView>
+
+
+
+
+
+</LinearLayout>
