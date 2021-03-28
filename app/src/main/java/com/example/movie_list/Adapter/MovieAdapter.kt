@@ -34,6 +34,8 @@ class MovieAdapter(val movies_list:MutableList<Movies>):RecyclerView.Adapter<Mov
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.name.text=movies_list[position].name
+        holder.team.text=movies_list[position].team
+        holder.bio.text=movies_list[position].bio
         Picasso.get().load(movies_list[position].imageurl).into(holder.imageurl)
 
 

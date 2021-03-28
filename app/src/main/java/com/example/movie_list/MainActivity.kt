@@ -37,26 +37,19 @@ class MainActivity : AppCompatActivity() {
 
     private fun getAllMovieDetails() {
         mService.getmovieDetails().enqueue(object :Callback<MutableList<Movies>>{
-            override fun onResponse(
-                call: Call<MutableList<Movies>>,
-                response: Response<MutableList<Movies>>
-            ) {
-               mAdapter= MovieAdapter(response.body() as MutableList<Movies>)
+            override fun onResponse(call: Call<MutableList<Movies>>, response: Response<MutableList<Movies>>) {
+                mAdapter = MovieAdapter(response.body() as MutableList<Movies>)
                 mAdapter.notifyDataSetChanged()
-                recyclerView.adapter=mAdapter
-
+                recyclerView.adapter = mAdapter
             }
 
             override fun onFailure(call: Call<MutableList<Movies>>, t: Throwable) {
                 TODO("Not yet implemented")
             }
 
+
         })
-
-
     }
-}
-
-private fun <T> Call<T>.enqueue(callback: Callback<MutableList<T>>) {
 
 }
+

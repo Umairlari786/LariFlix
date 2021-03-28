@@ -20,6 +20,7 @@
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/movie_image"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -29,6 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
+                android:layout_marginTop="10dp"
                 android:textColor="@color/white"
                 android:layout_marginLeft="10dp"
                 android:textStyle="bold"
@@ -51,10 +53,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
-                android:textColor="#036FF4"
+                android:textColor="#060606"
                 android:textStyle="bold"
                 android:layout_marginLeft="10dp"
-                android:text="Demo movie team ">
+                android:text="Demo movie team "
+                android:layout_marginBottom="30dp">
 
             </TextView>
 

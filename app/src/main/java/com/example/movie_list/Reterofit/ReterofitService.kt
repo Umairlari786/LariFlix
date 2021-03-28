@@ -8,6 +8,6 @@ interface ReterofitService {
 
     @GET("marvel")
 
-    fun getmovieDetails():Call<Movies>
+    fun getmovieDetails():Call<MutableList<Movies>>
 
 }

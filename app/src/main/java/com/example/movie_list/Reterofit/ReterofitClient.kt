@@ -7,11 +7,11 @@ object ReterofitClient {
 
     private var retrofit: Retrofit?=null
 
-    fun getClient (baseUrl :String):Retrofit{
+    fun getClient (baseurl :String):Retrofit{
 
         if(retrofit == null){
             retrofit=Retrofit.Builder()
-                .baseUrl(baseUrl)
+                .baseUrl(baseurl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
